@@ -1,0 +1,293 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(../font/Roboto-Bold.ttf);
+}
+
+:root {
+    --black: #000;
+    --white: #FFF;
+    --grey: #dddddd;
+    --maincolor: #0b0c17;
+    --maincolor2: #ff3571;
+    --maincolor3: #3C30FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+html {
+    font-size: 62.5%;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}
+
+main {
+    margin-bottom: 15vh;
+}
+
+main, footer {
+    padding: 0 10vw;
+}
+
+img {
+    max-width: 100%;
+}
+
+.icon {
+    width: 4.5%;
+    height: auto;
+    margin-right: 15px;
+}
+
+.idea {
+    width: 10%;
+    height: auto;
+}
+
+.steps {
+    width: 40%;
+}
+
+.emoji {
+    margin-bottom: 2vh;
+}
+
+footer img {
+    width: 2%;
+    height: auto;
+}
+
+
+
+h1, h2 , h3, h4, .number {
+    font-family: RobotoBold, sans-serif;
+}
+
+h1 {
+    font-size: 6.5rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 5.5rem;
+    margin-bottom: 5vh;
+}
+
+.exception {
+    width: 50vw;
+    margin-bottom: 20vh;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    margin-bottom: 2vh;
+}
+
+p {
+    font-size: 1.8rem;
+    color: var(--maincolor);
+    opacity: .75;
+    line-height: 200%;
+}
+
+nav div p {
+    font-size: 1.2rem;
+}
+
+.intro p:first-of-type {
+    margin-bottom: 20vh;
+    font-size: 2rem;
+}
+
+.ready p {
+    font-size: 2.5rem;
+    line-height: 175%;
+    margin-bottom: 10vh;
+}
+
+.number {
+    font-size: 6rem;
+    color: var(--grey);
+    margin-bottom: 5vh;
+}
+
+footer p {
+    display: inline-block;
+    margin: 0 1vw 0 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.intro a {
+    font-family: RobotoBold, sans-serif;
+    font-size: 1.5rem;
+    color: var(--maincolor2);
+}
+
+
+
+/* HEADER */
+header {
+    height: 100vh;
+    position: relative;
+}
+
+.illustration {
+    width: 60vw;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+}
+
+.illustration-ppl {
+    height: 80vh;
+    width: auto;
+    position: absolute;
+    z-index: -5;
+    top: 2.5vh;
+    right: 2vw;
+    animation: move 4s alternate-reverse infinite;
+}
+
+@keyframes move {
+    from {
+        transform: rotate(-2.5deg);
+        transform-origin: 5% -5%;
+    }
+    to {
+        transform: rotate(5deg);
+        transform-origin: -5% 5%;
+    }
+    
+}
+
+/* NAV */
+nav {
+    padding: 3vh 0 0 1vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30vh;
+}
+
+nav img {
+    width: 4rem;
+    height: auto;
+    position: fixed;
+    top: 3vh
+}
+
+nav div {
+    margin-left: 3.2vw;
+}
+
+/* SECTION .intro */
+.intro {
+    /* border: 1px solid black; */
+    width: 40vw;
+    margin: 0 0 0 5vw;
+    padding: 2rem;
+}
+
+/* HEADER ENDE */
+
+/* SECTION .gallery */
+.gallery {
+    height: 100vh;
+    padding: 15vh 0;
+}
+
+/* SECTION .split */
+.split {
+    height: 70vh ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+main section:nth-of-type(7) {
+    margin-bottom: 15vh;
+}
+
+.split article {
+    width: 40vw;
+}
+
+.split .smaller {
+    width: 30vw;
+}
+
+
+/* SECTION .weeks */
+.weeks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22.5%;
+    margin-bottom: 25vh;
+}
+
+.weeks article {
+    display: flex;
+    align-items: baseline;
+}
+
+/* SECTION .ready */
+.ready {
+    text-align: center;
+    padding: 0 10vw;
+    margin-bottom: 10vh;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* INPUTS */
+input {
+    display: inline-block;
+    width: 25vw;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+input[type="email"] {
+    border: .1px solid var(--grey);
+    font-size: 1.75rem;
+    padding: 1.5vh 0;
+}
+
+input[type="submit"] {
+    width: 10vw;
+    padding: 1.5vh 0;
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    background-color: var(--maincolor2);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, rgba(255,53,113,1) 25%, rgba(60,48,255,1) 100%);
+}
+
+
+
+
