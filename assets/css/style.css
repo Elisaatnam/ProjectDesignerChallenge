@@ -143,7 +143,7 @@ a {
 
 /* HEADER */
 header {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -199,7 +199,6 @@ nav div {
 
 /* SECTION .intro */
 .intro {
-    /* border: 1px solid black; */
     width: 40vw;
     margin: 0 0 0 5vw;
     padding: 2rem;
@@ -209,13 +208,13 @@ nav div {
 
 /* SECTION .gallery */
 .gallery {
-    height: 100vh;
+    min-height: 100vh;
     padding: 15vh 0;
 }
 
 /* SECTION .split */
 .split {
-    height: 70vh ;
+    min-height: 70vh ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -288,6 +287,212 @@ input[type="submit"]:hover {
     background: linear-gradient(90deg, rgba(255,53,113,1) 25%, rgba(60,48,255,1) 100%);
 }
 
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+    /* GENERAL STYLES */
+    .emoji {
+        width: 10%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4, p {
+        font-size: 1.4rem;
+    }
+
+    nav div p {
+        font-size: 1rem;
+    }
+
+    .intro p:first-of-type, .ready p {
+        font-size: 1.6rem;
+    }
+
+    .number {
+        font-size: 4rem;
+    }
+
+    .intro a {
+        font-size: 1.2rem;
+    }
+
+    /* HEADER */
+    .illustration-ppl {
+        height: 35vh;
+        top: 2vh;
+    }
+
+    /* NAV */
+    nav img {
+        width: 2.25rem;
+    }
+
+    nav div {
+        margin-left: 4vw;
+    }
+
+    /* SECTION .intro */
+    .intro {
+        width: 60vw;
+    }
+
+    /* HEADER ENDE */
+
+    /* SECTION .gallery */
+    .gallery {
+        padding: 5vh 0 0 0;
+        min-height: 50vh;
+    }
+
+    /* SECTION .split */
+    .split {
+        min-height: 45vh ;
+    }
+
+    /* INPUTS */
+input {
+    width: 45vw;
+}
+
+input[type="email"] {
+    font-size: 1.5rem;
+}
+
+input[type="submit"] {
+    font-size: 1.5rem;
+    width: 15vw;
+    padding: 1.5vh 0;
+}
+}
+
+@media only screen and (max-width: 676px) {
+    /* GENERAL STYLES */
+    main, footer {
+        padding: 0 7,5vw;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .exception {
+        width: 75vw;
+        margin-bottom: 10vh;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4, p {
+        font-size: 0.8rem;
+    }
+
+    nav div p {
+        font-size: 0.6rem;
+    }
+
+    .intro p:first-of-type, .ready p {
+        font-size: 1.2rem;
+    }
+
+    .number {
+        font-size: 3rem;
+    }
+
+    .intro a {
+        font-size: 1rem;
+    }
+
+    /* HEADER */
+    .illustration-ppl {
+        height: 20vh;
+    }
+
+    /* NAV */
+    nav img {
+        width: 1.8rem;
+    }
+
+    nav div {
+        margin-left: 6vw;
+    }
+
+    /* SECTION .intro */
+    .intro {
+        width: 80vw;
+    }
+
+    /* HEADER ENDE */
+
+    /* SECTION .gallery */
+    .gallery {
+        padding: 0;
+        min-height: 40vh;
+    }
+
+    /* SECTION .split */
+    .split {
+        min-height: 50vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .split article {
+        width: 75vw;
+    }
+    
+    .split .smaller {
+        width: 75vw;
+    }
+
+    /* SECTION .weeks */
+.weeks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 10vh;
+}
+
+/* SECTION .ready */
+.ready {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 5vh;
+}
+
+/* INPUTS */
+input {
+    display: inline-block;
+    width: 50vw;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+input[type="email"] {
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    font-size: 1rem;
+    width: 15vw;
+    padding: 1.5vh 0;
+}
+}
 
 
 
